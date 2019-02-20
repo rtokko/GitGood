@@ -4,9 +4,8 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors' , 1);
 
 include("config.php");
-include ("welcome.php") ;
 
-$db = mysqli_connect($hostname, $username, $password, $project );
+$db = mysqli_connect($hostname, $username, $project, $password );
 if (mysqli_connect_errno())
   {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();

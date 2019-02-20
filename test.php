@@ -31,3 +31,25 @@ mysqli_close($db);
 exit ( "<br>Interaction completed.<br><br>"  ) ;
 
 ?>
+
+<!DOCTYPE HTML>
+
+<HTML>
+
+<h2>Git Good Login</h2>
+
+  <form action="">
+
+    Username:<br>
+    <input type="text" name="username" id="username">
+    <br><br>
+
+    Password:<br>
+    <input type="password" name="password" id="password">
+    <br><br>
+
+    <input type="submit" value="Submit"><a href="D:/GitGood/user_creation.html"><input type="button" value="new user"></a>
+    
+  </form> 
+
+</HTML>

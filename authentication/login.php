@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	// connect to database
-	$db = mysqli_connect("sql2.njit.edu", "cv59", "christyv1", "cv59");
+	$db = mysqli_connect("localhost", "testuser", "12345678", "testdb");
 	if (isset($_POST['login_btn'])) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];

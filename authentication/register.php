@@ -10,7 +10,7 @@
 		if ($password == $password2) {
 			// create user
 //$password = md5($password); //hash password before storing for security purposes
-			$sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";
+			$sql = "INSERT INTO testtable(username, email, password) VALUES('$username', '$email', '$password')";
 			mysqli_query($db, $sql);
 			$_SESSION['message'] = "You are now logged in";
 			$_SESSION['username'] = $username;

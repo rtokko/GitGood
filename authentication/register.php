@@ -30,14 +30,12 @@
 <div class="header"> 
 	<h1>Register</h1>
 </div>
-
 <?php
-	if (isset($_SESSION['message'])) {
+	if (isset($_SESSIOON['message'])){
 		echo "<div id='error_msg'>".$_SESSION['message']."</div>";
 		unset($_SESSION['message']);
 	}
 ?>
-
 <form method="post" action="register.php">
 	<table>
 		<tr>

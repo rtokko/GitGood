@@ -25,19 +25,18 @@
 <html>
 <head>
 	<title>Register & Login</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 <div class="header"> 
 	<h1>Register & Login</h1>
 </div>
 <?php
-	if (isset($_SESSION['message'])) {
-		echo "<div id='error_msg'>".$_SESSION['message']."</div>";
+	if (isset($_SESSION['message'])){
+		echo "<dic id='error_msg'>".$_SESSION['message']."</div>";
 		unset($_SESSION['message']);
 	}
 ?>
-
 
 <form method="post" action="login.php">
 	<table>

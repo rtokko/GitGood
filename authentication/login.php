@@ -25,7 +25,6 @@
 <html>
 <head>
 	<title>Register & Login</title>
-
 </head>
 <body>
 <div class="header"> 

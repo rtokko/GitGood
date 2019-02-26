@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+    <script>
+        function passwdCheck(passwd,repasswd){
+  
+          if(passwd == repasswd){
+            
+            window.alert("Both Password are good!")
+  
+          }else{
+  
+            window.alert("Retype both password!")
+          
+          }
+  
+        }
+      </script>
+
+  <h1>Git Good</h1>
+  <h2>User Creation</h2> 
+
+  <form action="create-user.php">
+
+    Username
+    <input type="text" name="u-name" id="u-name">
+    <br><br>
+
+    Password:<br>
+    <input type="password" name="passwd" id="passwd">
+    <br><br>
+ 
+    Retype Password:<br>
+    <input type="password" name="repassword" id="repasswd">
+    <br><br>
+
+    Email address:<br>
+    <input type="text" name="email" id="email">
+    <br><br> 
+
+    
+  <!--
+    
+    Retype Email address:<br>
+    <input type="text" name="re_email" id="re_email">
+    <br><br>
+
+    First name:<br>
+    <input type="text" name="firstname" id="fname">
+    <br><br>
+
+    Last name:<br>
+    <input type="text" name="lastname" id="lname">
+    <br><br>
+
+    Email address:<br>
+    <input type="text" name="email" id="email">
+    <br><br>
+
+    Retype Email address:<br>
+    <input type="text" name="re_email" id="re_email">
+    <br><br>
+
+  -->
+
+    <input type="submit" value="Create" name = "register_btn" >
+    
+  </form> 
+
+</HTML>

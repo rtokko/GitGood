@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	// connect to database
-	$db = mysqli_connect("localhost", "testuser", "12345678", "testdb");
+	$db = mysqli_connect("10.0.0.7", "admin", "12345", "gitgood");
 	if (isset($_POST['register_btn'])) {
 		$username = $_POST['username'];
 		$email = $_POST['email'];
@@ -10,7 +10,7 @@
 		if ($password == $password2) {
 			// create user
 //$password = md5($password); //hash password before storing for security purposes
-			$sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";
+			$sql = "INSERT INTO test(username, email, password) VALUES('$username', '$email', '$password')";
 			mysqli_query($db, $sql);
 			$_SESSION['message'] = "You are now logged in";
 			$_SESSION['username'] = $username;

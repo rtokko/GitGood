@@ -1,12 +1,12 @@
 <?php 
 	session_start();
 	// connect to database
-	$db = mysqli_connect("localhost", "testuser", "12345678", "testdb");
+	$db = mysqli_connect("10.0.0.7", "admin", "12345", "gitgood");
 	if (isset($_POST['login_btn'])) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		//$password = md5($password); // remember we hashed password before storing last time
-		$sql = "SELECT * FROM testtable WHERE username='$username' AND password='$password'";
+		$sql = "SELECT * FROM test WHERE username='$username' AND password='$password'";
 		$result = mysqli_query($db, $sql);
 		if (mysqli_num_rows($result) == 1) {
 			$_SESSION['message'] = "You are now logged in";

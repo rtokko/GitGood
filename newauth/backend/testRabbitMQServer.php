@@ -20,12 +20,14 @@ function doLogin($username,$password)
 		$sql = "SELECT * FROM test WHERE username='$username' AND password='$password'";
 		$result = mysqli_query($db, $sql);
 		if (mysqli_num_rows($result) == 1) {
-			$_SESSION['message'] = "You are now logged in";
-			$_SESSION['username'] = $username;
+			//$_SESSION['message'] = "You are now logged in";
+			//$_SESSION['username'] = $username;
+			echo "You are now logged in";
 			return true;
 			//header("location: home.php"); //redirect to home page
 		}else{
-			$_SESSION['message'] = "Username/password combination incorrect";
+			//$_SESSION['message'] = "Username/password combination incorrect";
+			echo "Username/password combination incorrect";
 			return false;
 		}
 	//}
@@ -96,5 +98,3 @@ $server->process_requests('requestProcessor');
 echo "testRabbitMQServer END".PHP_EOL;
 exit();
 ?>
-
-

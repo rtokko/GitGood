@@ -1,5 +1,6 @@
 <?php 
 	session_start();
+	unset($_SESSION["index"]);
 	$_SESSION["registration"] = 'true';
 /*
 	// connect to database
@@ -58,10 +59,10 @@
 			<td>Password:</td>
 			<td><input type="password" name="password" class="textInput"></td>
 		</tr>
-		<tr>
+		<!-- <tr>
 			<td>Password again:</td>
 			<td><input type="password" name="password2" class="textInput"></td>
-		</tr>
+		</tr> -->
 		<tr>
 			<td></td>
 			<td><input type="submit" name="register_btn" value="Register"></td>

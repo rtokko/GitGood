@@ -1,16 +1,18 @@
 <?php 
 	session_start();
+	unset($_SESSION["registration"]);
 
-	$_SESSION["login_btn"] = 'true'; //not sure if this is right
-/*
+	$_SESSION["index"] = 'true'; //not sure if this is right login_btn
+
+	/*
 	// connect to database
 
-	$db = mysqli_connect("10.0.0.7", "admin", "12345", "gitgood");
+$db = mysqli_connect("10.0.0.5", "admin", "12345", "gitgood");
 	if (isset($_POST['login_btn'])) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		//$password = md5($password); // remember we hashed password before storing last time
-		$sql = "SELECT * FROM test WHERE username='$username' AND password='$password'";
+
+	$sql = "SELECT * FROM test WHERE username='$username' AND password='$password'";
 		$result = mysqli_query($db, $sql);
 		if (mysqli_num_rows($result) == 1) {
 			$_SESSION['message'] = "You are now logged in";
@@ -20,6 +22,9 @@
 			$_SESSION['message'] = "Username/password combination incorrect";
 		}
 	}
+	
+		//$password = md5($password); // remember we hashed password before storing last time
+		
 */
 
 ?>
@@ -56,7 +61,7 @@
 		</tr>
 
 		<tr>
-			<td></td>
+			<td><a href="register.php"><input type="button" name="reg_btn" value="Register"></a></td>
 			<td><input type="submit" name="login_btn" value="Login"></td>
 		</tr>
 	</table>

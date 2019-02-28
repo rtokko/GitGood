@@ -1,8 +1,11 @@
 #!/usr/bin/php
+
 <?php
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
+
+session_start();
 
 $client = new rabbitMQClient("testRabbitMQ.ini","testServer");
 if (isset($argv[1]))
@@ -31,12 +34,15 @@ echo $argv[0]." END".PHP_EOL;
 */
 
 //login session
-if(isset($_SESSION["index_btn"])) {
+if(isset($_SESSION["index"])) {//_btn
 
 	$request = array();
 	$request['type'] = "login";
 	$request['username'] = $_POST['username'];
 	$request['password'] = $_POST['password'];
+
+		$_SESSION["uname"] = $_POST['username']; 
+		//$uname = $_POST['username'];
 
 	$request['message'] = $msg;
 	$response = $client->send_request($request); //response received from rmq server
@@ -47,11 +53,13 @@ if(isset($_SESSION["index_btn"])) {
 	if($response == 1) {
 
 		//send to main web page???
+		header("Location: home.php");
 	}
 	else{
 
 		echo("response failure");
 		//then send back to login maybe??
+		header("Location: login.php");
 	}
 
 }
@@ -69,7 +77,9 @@ if(isset($_SESSION["registration"])){
 
 	if ($response ==1){
 		//then send back to registration???
-        }
+		header("Location: register.php");
+        } 
+	header("Location:register.php");
 	
 }
 

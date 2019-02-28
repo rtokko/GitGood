@@ -45,11 +45,11 @@ function doRegistration($username, $email, $password) {
 			// create user
 			//$password = md5($password); //hash password before storing for security purposes
 			$sql = "INSERT INTO test(username, email, password) VALUES('$username', '$email', '$password')";
-			($t = mysqli_query($db, $sql)) or die(mysqli_error($db); //changed this line in order to error check
+			($t = mysqli_query($db, $sql)) or die(mysqli_error($db)); //changed this line in order to error check
 			$_SESSION['message'] = "You are now logged in";
 			$_SESSION['username'] = $username;
 			//header("location: home.php"); //redirect to home page
-			return true
+			return true;
 		}else{
 			$_SESSION['message'] = "The two passwords do not match";
 			return false;

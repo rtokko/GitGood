@@ -8,7 +8,7 @@ note: may need to run commands with root privileges
 5. node sgg.js
 
 
-Using browserify to display api response on browser
+Using browserify to display api response on browser while allowing "require()" statements
 
 1. npm install -g browserify
 2. npm install uniq

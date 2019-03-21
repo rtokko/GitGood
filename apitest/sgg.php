@@ -5,9 +5,10 @@
 <h1>up tourn</h1>
 
 <?php
-$output=shell_exec('./sgg.sh');
-echo $output;
+$text=shell_exec('./sgg.sh');
+//print "$text";
 ?>
+<object width="5000" height="5000" data="output.txt"></object>
 
 </body>
 </html>

@@ -1,6 +1,5 @@
 const { request, GraphQLClient } = require('graphql-request')
 
-
 async function main() {
   const endpoint = 'https://api.smash.gg/gql/alpha'
 
@@ -35,6 +34,7 @@ const graphQLClient = new GraphQLClient(endpoint, {
 
   const data = await graphQLClient.request(query, variables)
   console.log(JSON.stringify(data, undefined, 2))
+
  
 }
 

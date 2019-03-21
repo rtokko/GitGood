@@ -5,11 +5,7 @@ note: may need to run commands with root privileges
 2. install npm
 3. npm init
 4. npm install graphql-request (as seen in https://github.com/prisma/graphql-request)
-5. node sgg.js
+5. node sgg.js (to test it out)
 
-
-Using browserify to display api response on browser while allowing "require()" statements
-
-1. npm install -g browserify
-2. npm install uniq
-3. browserify main.js -o bundle.js
+6. create the bash script (sgg.sh) to run node sgg.js and give it permissions
+7. execute the script in a php file (sgg.php) and display the contents

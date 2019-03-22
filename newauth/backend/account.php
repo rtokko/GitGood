@@ -1,6 +1,6 @@
 
 <?php
-$hostname = "10.0.0.6" ;
+$hostname = "10.0.0.5" ;
 $db_username = "admin" ; //replace with your personal db name
 $db_project = "gitgood" ; //Name of DB
 $db_password = "12345" ; //replace with your db password 

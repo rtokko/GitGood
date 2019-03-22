@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	// connect to database
-	$db = mysqli_connect("10.0.0.7", "admin", "12345", "gitgood");
+	$db = mysqli_connect("10.0.0.5", "admin", "12345", "gitgood");
 	if (isset($_POST['login_btn'])) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];

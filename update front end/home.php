@@ -17,6 +17,8 @@
 </div>
 
 <?php
+
+
 	if (isset($_SESSION['message'])) {
 		echo "<div id='error_msg'>".$_SESSION['message']."</div>";
 		unset($_SESSION['message']);
@@ -29,7 +31,7 @@
 
 <form name="form" method="post" action="logout.php">
 
-  <a href = "gooCal.html">
+  <a href = "events/upcomingEvents.php">
   <input name = "events" type = "button" id = "events" value = "Upcoming Events"> 
   </a>
 

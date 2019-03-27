@@ -1,0 +1,31 @@
+{
+	"tournaments": {
+		"nodes": [
+			{
+				"name": "Battle For The East",
+				"startAt": 1570204800,
+				"venueAddress": "801 Boardwalk, Atlantic City, NJ 08401, USA"
+			},
+			{
+				"name": "Summer Jam",
+				"startAt": 1567148400,
+				"venueAddress": "2349 Marlton Pike W, Cherry Hill, NJ 08002, USA"
+			},
+			{
+				"name": "Everyone's Here #2 [DE] - Summer 2019 (SSBU - Singles)",
+				"startAt": 1564695000,
+				"venueAddress": "3230 Shafto Rd, Tinton Falls, NJ 07753, USA"
+			},
+			{
+				"name": "Smashters | The Smash Masters #1 - Spring 2019",
+				"startAt": 1556398500,
+				"venueAddress": "8 Randi Way, Neptune City, NJ 07753, USA"
+			},
+			{
+				"name": "Master Instinct #4: Nocturnal Zaibatsu",
+				"startAt": 1556389800,
+				"venueAddress": "3167 John F. Kennedy Blvd, North Bergen, NJ 07047, USA"
+			}
+		]
+	}
+}

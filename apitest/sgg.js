@@ -30,13 +30,19 @@ const graphQLClient = new GraphQLClient(endpoint, {
 
   const variables = { 
   "state": "NJ",
-  "perPage": 5 
+  "perPage": 10 
 }
 	
 
   const data = await graphQLClient.request(query, variables)
+  var dataresponse = JSON.stringify(data, undefined, '\t');
+  var dataresponse = JSON.parse(dataresponse)
+  var node = dataresponse.tournaments.nodes
+   for(var val in node){
+	console.log(node[val])
 	
-  console.log(JSON.stringify(data, undefined, "\t"))
+   }
+  //console.log(dataresponse.tournaments.nodes)
 
  
 }

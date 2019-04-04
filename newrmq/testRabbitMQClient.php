@@ -68,7 +68,9 @@ if(isset($_SESSION["registration"])){
 if(isset($_SESSION["api"])){
         $request = array();
         $request['type'] = "api";
+	$request['source'] = "Smash.gg";
+	
         $response = $client->send_request($request);
-       
+}
 
 ?>

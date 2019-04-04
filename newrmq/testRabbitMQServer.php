@@ -56,6 +56,13 @@ function doRegistration($username, $email, $password) {
 		}
 	//}
 }
+
+
+function doAPI($api){
+       $text = "API Connection Successful!";
+        return $text;
+}
+
 function requestProcessor($request) 
 {
   echo "received request".PHP_EOL;
@@ -73,6 +80,8 @@ function requestProcessor($request)
     //new code in switch statement
     case "registration":
       return doRegistration($request['username'], $request['email'], $request['password']);
+    case "api":
+      return doAPI($request['source']);
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }

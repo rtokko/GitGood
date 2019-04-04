@@ -65,4 +65,10 @@ if(isset($_SESSION["registration"])){
 	header("Location:register.php");
 	
 }
+if(isset($_SESSION["api"])){
+        $request = array();
+        $request['type'] = "api";
+        $response = $client->send_request($request);
+       
+
 ?>

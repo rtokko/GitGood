@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial; background-color: #D3D3D3;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #FF0000;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #8B0000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #8B0000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+
+}
+</style>
+</head>
+<body>
+
+<button onclick="goBack()">Back to Game Selection</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+
+</script>
+
+<h1 style="text-shadow: 1px 1px 2px black; font-size: 300%;"> Super Smash Brothers Melee</h1>
+<p>Click on a player!</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openPlayer(event, 'Mew2King')">Mew2King</button>
+  <button class="tablinks" onclick="openPlayer(event, 'Hungrybox')">Hungrybox</button>
+ 
+</div>
+
+<div id="Mew2King" class="tabcontent">
+	
+<h1>Player Showcase: Mew2King </h1>
+<img src="https://www.ssbwiki.com/images/thumb/2/25/Ssbmrank2017_4.png/462px-Ssbmrank2017_4.png" style="width: 20%">
+	<h2>Mew2King Twitch Stream</h2>
+ 
+    
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="twitch-embed"></div>
+<script type="text/javascript">
+  var options = {
+    width: 854,
+    height: 480,
+    channel: "mew2king"
+  };
+  var player = new Twitch.Player("twitch-embed", options);
+  player.stop();
+
+</script>
+
+<h2>Mew2King's Best Tournament Sets</h2>
+<iframe id="1" width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLzPFm4Uhv53AE_cV4x9xSlNZ0pFqwT5-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+<div id="Hungrybox" class="tabcontent">
+ <h1>Player Showcase: Hungrybox </h1>
+<img src="https://bloximages.chicago2.vip.townnews.com/alligator.org/content/tncms/assets/v3/editorial/f/c0/fc058d30-e7e0-11e4-9d91-2792d76b61d3/5535d57d78b79.image.jpg" style="width: 20%">
+<h2>Hungrybox Twitch Stream</h2>
+
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="twitch-embed2"></div>
+<script type="text/javascript">
+  var options = {
+    width: 854,
+    height: 480,
+    channel: "hungrybox"
+  };
+  var player = new Twitch.Player("twitch-embed2", options);
+  player.stop();
+
+</script>
+
+<h2>Hungrybox's Best Tournament Sets</h2>
+
+<iframe id="2" width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLzPFm4Uhv53AAkfF1EqxTGOpVDXv7Z5eV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<script>
+function openPlayer(evt, playerName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(playerName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+

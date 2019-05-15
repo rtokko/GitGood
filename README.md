@@ -29,6 +29,8 @@ The deployment folder holds our scripts that transfer and rollback project files
 
 The log folder holds the the code used for error logging and an example of errors being logged.
 
+showcase.html, located in the FrontEnd folder is the main hub where user chooses a game
+  -after choosing a game, the user is led to a page containing the portraits, live streams, and highlights of the top players of the game they chose
 
 
 ***The phpBB3 file in the FrontEnd folder must be unzipped before attempting to test the service.

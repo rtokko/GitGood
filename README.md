@@ -25,4 +25,10 @@ The logout option will bring you back to index.php and you would have to log bac
 
 The sql dump needed to house the table used for our service is located in the SQL folder
 
+The deployment folder holds our scripts that transfer and rollback project files from each development cluster
+
+The log folder holds the the code used for error logging and an example of errors being logged.
+
+
+
 ***The phpBB3 file in the FrontEnd folder must be unzipped before attempting to test the service.

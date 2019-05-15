@@ -1,0 +1,30 @@
+{ name: 'Battle For The East',
+  startAt: 1570204800,
+  venueAddress: '801 Boardwalk, Atlantic City, NJ 08401, USA' }
+{ name: 'Summer Jam',
+  startAt: 1567148400,
+  venueAddress: '2349 Marlton Pike W, Cherry Hill, NJ 08002, USA' }
+{ name: 'Everyone\'s Here #2 [DE] - Summer 2019 (SSBU - Singles)',
+  startAt: 1564695000,
+  venueAddress: '3230 Shafto Rd, Tinton Falls, NJ 07753, USA' }
+{ name: 'Run it Back #1',
+  startAt: 1562536800,
+  venueAddress: '318 W Saddle River Rd, Upper Saddle River, NJ 07458, USA' }
+{ name: 'Platinum Star Smash S2:E3 Ultimate Monhtly [Season 2 Finale]',
+  startAt: 1560018600,
+  venueAddress: '2396 U.S. 9, Howell, NJ 07731, USA' }
+{ name: 'BRHS June 2019 Tournament',
+  startAt: 1559673000,
+  venueAddress: '600 Garretson Rd, Bridgewater Township, NJ 08807, USA' }
+{ name: 'King of the Turf 3',
+  startAt: 1559341800,
+  venueAddress: '614 Lambs Rd, Pitman, NJ 08071, USA' }
+{ name: 'Platinum Star Super Rivals',
+  startAt: 1558807200,
+  venueAddress: '2396 U.S. 9, Howell Township, NJ 07731, USA' }
+{ name: 'Amalgamation',
+  startAt: 1558801800,
+  venueAddress: '2600 Woodbridge Ave, Edison, NJ 08837, USA' }
+{ name: 'Newton Smash Tournament 27',
+  startAt: 1558800000,
+  venueAddress: '51 Ryerson Ave, Newton, NJ 07860, USA' }
